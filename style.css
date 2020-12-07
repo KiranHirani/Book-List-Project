@@ -1,0 +1,14 @@
+.success, .error{
+color:white;
+padding:5px;
+margin:5px 0 15px 0;
+font-weight:bold;
+}
+
+.success{
+    background:rgba(0, 128, 0, 0.87);
+}
+
+.error{
+    background:rgba(230, 18, 18, 0.842);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Book List</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- What is container class, what does it do? -->
+        <h2>Add Book</h2>
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+        </form>
+        <!-- <hr> -->
+        <!-- For line -->
+        <table class="u-full-width">
+            <!-- This class will make it stretch across the whole screen -->
+            <thead>
+                <tr>
+                    <th id="titleT">Title</th>
+                    <th id="authorT">Author</th>
+                    <th id="isbnT">ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- We will insert our rows dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="appes6.js"></script>
+</body>
+
+</html>
