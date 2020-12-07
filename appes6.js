@@ -140,7 +140,7 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 document.getElementById('book-list').addEventListener('click',function(e){
     //Instantiate ui 
     const ui=new UI();
-
+if(e.target.className==='delete'){
     ui.deleteBook(e.target);
 
     //Remove from LS 
@@ -149,4 +149,5 @@ document.getElementById('book-list').addEventListener('click',function(e){
     //Show message 
     ui.showAlert('Book Removed!','success');
     e.preventDefault();
+}
 })
